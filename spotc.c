@@ -24402,7 +24402,7 @@ static int         android_getCpuCount(void);
 //#line 1 "cpu-features.c"
 #include <sys/system_properties.h>
 #ifdef __arm__
-#include <machine/cpu-features.h>
+#include <sys/system_properties.h>
 #endif
 #include <pthread.h>
 

@@ -31,8 +31,7 @@
 #  define USE_MALLOC_USABLE_SIZE  1
 #elif defined(__ANDROID_API__)
 #  include <malloc.h>
-extern "C" size_t dlmalloc_usable_size(void*);
-#  define malloc_usable_size dlmalloc_usable_size
+#  define malloc_usable_size _msize
 #  define USE_MALLOC_USABLE_SIZE  1
 #elif defined(_WIN32)
 #  include <malloc.h>
