@@ -3187,7 +3187,7 @@ extern "C" {
 #endif
 
 #if defined(__ARM_NEON__) || defined(WEBP_ANDROID_NEON)
-#define WEBP_USE_NEON
+//#define WEBP_USE_NEON
 #endif
 
 typedef enum {
